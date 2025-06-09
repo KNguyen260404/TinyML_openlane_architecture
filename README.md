@@ -1,7 +1,5 @@
 # TinyML OpenLane Architecture
 
-![OpenLane Logo](https://openlane.readthedocs.io/en/latest/_images/openlane_logo.png)
-
 ## 1. Giới thiệu về OpenLane Architecture
 
 OpenLane là một hệ thống thiết kế vi mạch tự động (ASIC Flow) mã nguồn mở, dựa trên các công cụ EDA nguồn mở như OpenROAD, Magic, Netgen, KLayout, v.v. OpenLane giúp tự động hóa toàn bộ quy trình thiết kế từ RTL đến GDSII, bao gồm các bước như tổng hợp, floorplanning, placement, CTS, routing, DRC/LVS, và xuất layout cuối cùng.
