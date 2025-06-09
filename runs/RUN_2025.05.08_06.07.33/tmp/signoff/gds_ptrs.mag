@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 63439 65583
+string GDS_END 10773590
+string GDS_FILE /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_06.07.33/results/signoff/Random_forest_top_ver2.magic.gds
+string GDS_START 615540
+<< end >>

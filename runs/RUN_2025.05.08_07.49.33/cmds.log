@@ -1,0 +1,34 @@
+Thu May 08 07:49:33 +0000 2025 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/layers.list /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+
+Thu May 08 07:49:34 +0000 2025 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/merged.nom.lef -i /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Thu May 08 07:49:34 +0000 2025 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/merged.min.lef -i /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Thu May 08 07:49:34 +0000 2025 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/merged.max.lef -i /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Thu May 08 07:49:34 +0000 2025 - Executing "{python3 /openlane/scripts/mergeLib.py --output /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/synthesis/merged.lib --name sky130A_merged /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Thu May 08 07:49:34 +0000 2025 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/synthesis/trimmed.lib /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/synthesis/merged.lib}"
+
+Thu May 08 07:49:35 +0000 2025 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/cts/cts.lib.exclude.list --output /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/cts/cts.lib /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}"
+
+Thu May 08 07:49:35 +0000 2025 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/cts/cts-fastest.lib.exclude.list --output /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/cts/cts-fastest.lib /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib}"
+
+Thu May 08 07:49:35 +0000 2025 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/cts/cts-slowest.lib.exclude.list --output /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/cts/cts-slowest.lib /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}"
+
+Thu May 08 07:49:36 +0000 2025 - Executing "{python3 /openlane/scripts/new_tracks.py -i /home/nguyen2604/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/routing/config.tracks}"
+
+Thu May 08 07:49:36 +0000 2025 - Executing "{echo {OpenLane e73fb3c57e687a0023fcd4dcfd1566ecd478362a} > /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/OPENLANE_COMMIT}"
+
+Thu May 08 07:49:36 +0000 2025 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/nguyen2604/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/synthesis/0-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib}"
+
+Thu May 08 07:49:36 +0000 2025 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/synthesis/trimmed.lib > /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/tmp/synthesis/0-trimmed.no_pg.lib}"
+
+Thu May 08 07:49:36 +0000 2025 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/logs/synthesis/0-synthesis.log"
+
+Thu May 08 07:49:36 +0000 2025 - Executing "{yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/logs/synthesis/0-synthesis.log}"
+
+Thu May 08 08:03:19 +0000 2025 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/Random_forest_top_ver2\/runs\/RUN_2025.05.08_07.49.33\/results\/synthesis\/Random_forest_top_ver2.v/} /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/config.tcl}"
+
+Thu May 08 08:03:19 +0000 2025 - Executing "{python3 /openlane/scripts/synth_exp/analyze.py --output /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/reports/synthesis/0-exploration_analysis.html /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_07.49.33/logs/synthesis/0-synthesis.log}"
+

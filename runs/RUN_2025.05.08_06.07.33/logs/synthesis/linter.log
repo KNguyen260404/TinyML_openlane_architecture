@@ -1,0 +1,110 @@
+%Warning-EOFNEWLINE: /openlane/designs/Random_forest_top_ver2/src/test_syntax.v:23:11: Missing newline at end of file (POSIX 3.206).
+                                                                                     : ... Suggest add newline.
+   23 | endmodule 
+      |           ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.018
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/Random_forest_top_ver2.v:334:13: Bits of signal are not used: 'left_child_addr_root'[11:10]
+                                                                                                   : ... note: In instance 'Random_forest_top_ver2.tree_instances[20].u_tree'
+  334 | wire [11:0] left_child_addr_root;
+      |             ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/Random_forest_top_ver2.v:335:13: Bits of signal are not used: 'right_child_addr_root'[11:10]
+                                                                                                   : ... note: In instance 'Random_forest_top_ver2.tree_instances[20].u_tree'
+  335 | wire [11:0] right_child_addr_root;
+      |             ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/Random_forest_top_ver2.v:336:13: Bits of signal are not used: 'left_child_addr_nonroot'[11:10]
+                                                                                                   : ... note: In instance 'Random_forest_top_ver2.tree_instances[20].u_tree'
+  336 | wire [11:0] left_child_addr_nonroot;
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/Random_forest_top_ver2.v:337:13: Bits of signal are not used: 'right_child_addr_nonroot'[11:10]
+                                                                                                   : ... note: In instance 'Random_forest_top_ver2.tree_instances[20].u_tree'
+  337 | wire [11:0] right_child_addr_nonroot;
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/Random_forest_top_ver2.v:340:12: Signal is not used: 'left_child_addr'
+                                                                                                   : ... note: In instance 'Random_forest_top_ver2.tree_instances[20].u_tree'
+  340 | reg [11:0] left_child_addr;
+      |            ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/Random_forest_top_ver2.v:341:12: Signal is not used: 'right_child_addr'
+                                                                                                   : ... note: In instance 'Random_forest_top_ver2.tree_instances[20].u_tree'
+  341 | reg [11:0] right_child_addr;
+      |            ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_15.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[15].u_tree.u_tree_weight_rom.gen_tree_15.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_7.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[7].u_tree.u_tree_weight_rom.gen_tree_7.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_8.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[8].u_tree.u_tree_weight_rom.gen_tree_8.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_4.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[4].u_tree.u_tree_weight_rom.gen_tree_4.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_10.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[10].u_tree.u_tree_weight_rom.gen_tree_10.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_11.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[11].u_tree.u_tree_weight_rom.gen_tree_11.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_12.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[12].u_tree.u_tree_weight_rom.gen_tree_12.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_20.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[20].u_tree.u_tree_weight_rom.gen_tree_20.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_5.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[5].u_tree.u_tree_weight_rom.gen_tree_5.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_1.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[1].u_tree.u_tree_weight_rom.gen_tree_1.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_18.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[18].u_tree.u_tree_weight_rom.gen_tree_18.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_2.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[2].u_tree.u_tree_weight_rom.gen_tree_2.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_17.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[17].u_tree.u_tree_weight_rom.gen_tree_17.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_19.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[19].u_tree.u_tree_weight_rom.gen_tree_19.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_16.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[16].u_tree.u_tree_weight_rom.gen_tree_16.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_3.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[3].u_tree.u_tree_weight_rom.gen_tree_3.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_13.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[13].u_tree.u_tree_weight_rom.gen_tree_13.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_6.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[6].u_tree.u_tree_weight_rom.gen_tree_6.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_14.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                      : ... note: In instance 'Random_forest_top_ver2.tree_instances[14].u_tree.u_tree_weight_rom.gen_tree_14.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/Random_forest_top_ver2/src/tree_rom_9.v:7:33: Bits of signal are not used: 'addr'[9]
+                                                                                     : ... note: In instance 'Random_forest_top_ver2.tree_instances[9].u_tree.u_tree_weight_rom.gen_tree_9.u_tree_rom'
+    7 |     input wire [ADDR_WIDTH-1:0] addr,
+      |                                 ^~~~

@@ -1,0 +1,10 @@
+[WARNING STA-0361] net '*rom_*' not found.
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING STA-0361] net '*rom_*' not found.
+[WARNING STA-0472] no valid objects specified for -through
+[WARNING GRT-0026] Missing route to pin wire2/A.
+[WARNING GRT-0026] Missing route to pin _6069_/A.
+[WARNING GRT-0026] Missing route to pin _6069_/X.
+[WARNING GRT-0026] Missing route to pin wire14/A.
+[WARNING GRT-0026] Missing route to pin max_cap15/A.
+[WARNING] Did not save OpenROAD database!

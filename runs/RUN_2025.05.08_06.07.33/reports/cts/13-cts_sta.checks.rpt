@@ -1,0 +1,378 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: _6765_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: frame_id_out[4] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     1    0.01    0.01    0.01    0.01 ^ clk (in)
+                                         clk (net)
+                  0.01    0.00    0.01 ^ wire1/A (sky130_fd_sc_hd__clkbuf_2)
+     1    0.02    0.10    0.13    0.15 ^ wire1/X (sky130_fd_sc_hd__clkbuf_2)
+                                         net40 (net)
+                  0.10    0.00    0.15 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     8    0.11    0.12    0.22    0.36 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_0_clk (net)
+                  0.12    0.00    0.36 ^ clkbuf_3_2__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
+    14    0.06    0.08    0.19    0.55 ^ clkbuf_3_2__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                         clknet_3_2__leaf_clk (net)
+                  0.08    0.00    0.55 ^ clkbuf_leaf_26_clk/A (sky130_fd_sc_hd__clkbuf_4)
+     9    0.02    0.08    0.18    0.73 ^ clkbuf_leaf_26_clk/X (sky130_fd_sc_hd__clkbuf_4)
+                                         clknet_leaf_26_clk (net)
+                  0.08    0.00    0.73 ^ _6765_/CLK (sky130_fd_sc_hd__dfrtp_1)
+     2    0.01    0.14    0.41    1.14 ^ _6765_/Q (sky130_fd_sc_hd__dfrtp_1)
+                                         net6 (net)
+                  0.14    0.00    1.14 ^ output6/A (sky130_fd_sc_hd__buf_8)
+     1    0.10    0.17    0.22    1.35 ^ output6/X (sky130_fd_sc_hd__buf_8)
+                                         frame_id_out[4] (net)
+                  0.17    0.00    1.35 ^ frame_id_out[4] (out)
+                                  1.35   data arrival time
+
+                         10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (propagated)
+                         -0.10    9.90   clock uncertainty
+                          0.00    9.90   clock reconvergence pessimism
+                         -2.00    7.90   output external delay
+                                  7.90   data required time
+-----------------------------------------------------------------------------
+                                  7.90   data required time
+                                 -1.35   data arrival time
+-----------------------------------------------------------------------------
+                                  6.55   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+max slew violations count Typical: 0
+max fanout violations count Typical: 0
+max cap violations count Typical: 0
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 292 unannotated drivers.
+ arbitration_id[0]
+ arbitration_id[10]
+ arbitration_id[11]
+ arbitration_id[12]
+ arbitration_id[13]
+ arbitration_id[14]
+ arbitration_id[15]
+ arbitration_id[16]
+ arbitration_id[17]
+ arbitration_id[18]
+ arbitration_id[19]
+ arbitration_id[1]
+ arbitration_id[20]
+ arbitration_id[21]
+ arbitration_id[22]
+ arbitration_id[23]
+ arbitration_id[24]
+ arbitration_id[25]
+ arbitration_id[26]
+ arbitration_id[27]
+ arbitration_id[28]
+ arbitration_id[29]
+ arbitration_id[2]
+ arbitration_id[30]
+ arbitration_id[31]
+ arbitration_id[32]
+ arbitration_id[33]
+ arbitration_id[34]
+ arbitration_id[35]
+ arbitration_id[36]
+ arbitration_id[37]
+ arbitration_id[38]
+ arbitration_id[39]
+ arbitration_id[3]
+ arbitration_id[40]
+ arbitration_id[41]
+ arbitration_id[42]
+ arbitration_id[43]
+ arbitration_id[44]
+ arbitration_id[45]
+ arbitration_id[46]
+ arbitration_id[47]
+ arbitration_id[48]
+ arbitration_id[49]
+ arbitration_id[4]
+ arbitration_id[50]
+ arbitration_id[51]
+ arbitration_id[52]
+ arbitration_id[53]
+ arbitration_id[54]
+ arbitration_id[55]
+ arbitration_id[56]
+ arbitration_id[57]
+ arbitration_id[58]
+ arbitration_id[59]
+ arbitration_id[5]
+ arbitration_id[60]
+ arbitration_id[61]
+ arbitration_id[62]
+ arbitration_id[63]
+ arbitration_id[6]
+ arbitration_id[7]
+ arbitration_id[8]
+ arbitration_id[9]
+ data_field[0]
+ data_field[10]
+ data_field[11]
+ data_field[12]
+ data_field[13]
+ data_field[14]
+ data_field[15]
+ data_field[16]
+ data_field[17]
+ data_field[18]
+ data_field[19]
+ data_field[1]
+ data_field[20]
+ data_field[21]
+ data_field[22]
+ data_field[23]
+ data_field[24]
+ data_field[25]
+ data_field[26]
+ data_field[27]
+ data_field[28]
+ data_field[29]
+ data_field[2]
+ data_field[30]
+ data_field[31]
+ data_field[32]
+ data_field[33]
+ data_field[34]
+ data_field[35]
+ data_field[36]
+ data_field[37]
+ data_field[38]
+ data_field[39]
+ data_field[3]
+ data_field[40]
+ data_field[41]
+ data_field[42]
+ data_field[43]
+ data_field[44]
+ data_field[45]
+ data_field[46]
+ data_field[47]
+ data_field[48]
+ data_field[49]
+ data_field[4]
+ data_field[50]
+ data_field[51]
+ data_field[52]
+ data_field[53]
+ data_field[54]
+ data_field[55]
+ data_field[56]
+ data_field[57]
+ data_field[58]
+ data_field[59]
+ data_field[5]
+ data_field[60]
+ data_field[61]
+ data_field[62]
+ data_field[63]
+ data_field[6]
+ data_field[7]
+ data_field[8]
+ data_field[9]
+ timestamp[0]
+ timestamp[10]
+ timestamp[11]
+ timestamp[12]
+ timestamp[13]
+ timestamp[14]
+ timestamp[15]
+ timestamp[16]
+ timestamp[17]
+ timestamp[18]
+ timestamp[19]
+ timestamp[1]
+ timestamp[20]
+ timestamp[21]
+ timestamp[22]
+ timestamp[23]
+ timestamp[24]
+ timestamp[25]
+ timestamp[26]
+ timestamp[27]
+ timestamp[28]
+ timestamp[29]
+ timestamp[2]
+ timestamp[30]
+ timestamp[31]
+ timestamp[32]
+ timestamp[33]
+ timestamp[34]
+ timestamp[35]
+ timestamp[36]
+ timestamp[37]
+ timestamp[38]
+ timestamp[39]
+ timestamp[3]
+ timestamp[40]
+ timestamp[41]
+ timestamp[42]
+ timestamp[43]
+ timestamp[44]
+ timestamp[45]
+ timestamp[46]
+ timestamp[47]
+ timestamp[48]
+ timestamp[49]
+ timestamp[4]
+ timestamp[50]
+ timestamp[51]
+ timestamp[52]
+ timestamp[53]
+ timestamp[54]
+ timestamp[55]
+ timestamp[56]
+ timestamp[57]
+ timestamp[58]
+ timestamp[59]
+ timestamp[5]
+ timestamp[60]
+ timestamp[61]
+ timestamp[62]
+ timestamp[63]
+ timestamp[6]
+ timestamp[7]
+ timestamp[8]
+ timestamp[9]
+ clkload0/X
+ clkload1/X
+ clkload10/Y
+ clkload11/Y
+ clkload12/Y
+ clkload13/Y
+ clkload14/Y
+ clkload15/Y
+ clkload16/Y
+ clkload17/Y
+ clkload18/Y
+ clkload19/Y
+ clkload2/X
+ clkload20/Y
+ clkload21/Y
+ clkload22/Y
+ clkload23/Y
+ clkload24/Y
+ clkload25/Y
+ clkload26/Y
+ clkload27/X
+ clkload28/Y
+ clkload29/X
+ clkload3/X
+ clkload30/Y
+ clkload31/Y
+ clkload32/X
+ clkload33/X
+ clkload34/Y
+ clkload35/Y
+ clkload36/Y
+ clkload37/Y
+ clkload38/Y
+ clkload39/Y
+ clkload4/Y
+ clkload40/Y
+ clkload41/X
+ clkload42/Y
+ clkload43/Y
+ clkload44/Y
+ clkload45/Y
+ clkload46/Y
+ clkload47/Y
+ clkload48/Y
+ clkload49/Y
+ clkload5/Y
+ clkload50/Y
+ clkload51/X
+ clkload52/Y
+ clkload53/Y
+ clkload54/Y
+ clkload55/Y
+ clkload56/Y
+ clkload57/Y
+ clkload58/Y
+ clkload59/Y
+ clkload6/X
+ clkload60/Y
+ clkload61/Y
+ clkload62/Y
+ clkload63/Y
+ clkload64/Y
+ clkload65/Y
+ clkload66/Y
+ clkload67/Y
+ clkload68/Y
+ clkload69/Y
+ clkload7/Y
+ clkload70/Y
+ clkload71/Y
+ clkload72/X
+ clkload73/Y
+ clkload74/Y
+ clkload75/Y
+ clkload76/Y
+ clkload77/Y
+ clkload78/Y
+ clkload79/Y
+ clkload8/Y
+ clkload80/Y
+ clkload81/Y
+ clkload82/Y
+ clkload83/Y
+ clkload84/Y
+ clkload85/Y
+ clkload86/Y
+ clkload87/Y
+ clkload88/Y
+ clkload89/X
+ clkload9/Y
+ clkload90/Y
+ clkload91/Y
+ clkload92/Y
+ clkload93/Y
+ clkload94/Y
+ clkload95/Y
+ clkload96/Y
+ clkload97/Y
+ clkload98/X
+ clkload99/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

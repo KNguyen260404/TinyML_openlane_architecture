@@ -1,0 +1,33 @@
+
+71. Printing statistics.
+
+=== Random_forest_top_ver2 ===
+
+   Number of wires:              41888
+   Number of wire bits:          55522
+   Number of public wires:         351
+   Number of public wire bits:   12727
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              49230
+     $_ANDNOT_                   10750
+     $_AND_                       1153
+     $_DFFE_PN0P_                 1625
+     $_DFFE_PN1P_                   21
+     $_DFFE_PP_                   3845
+     $_DFF_PN0_                     85
+     $_DFF_PN1_                     21
+     $_DFF_P_                      789
+     $_MUX_                      20832
+     $_NAND_                       927
+     $_NOR_                        862
+     $_NOT_                        672
+     $_ORNOT_                     2117
+     $_OR_                        2754
+     $_SDFF_PN0_                    36
+     $_SDFF_PP0_                   328
+     $_XNOR_                       394
+     $_XOR_                       2018
+     sky130_fd_sc_hd__clkbuf_16      1
+

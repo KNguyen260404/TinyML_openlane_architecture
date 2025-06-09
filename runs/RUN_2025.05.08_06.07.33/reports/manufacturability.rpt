@@ -1,0 +1,19 @@
+Design Name: Random_forest_top_ver2
+Run Directory: /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_06.07.33
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_06.07.33/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_06.07.33/logs/signoff/42-Random_forest_top_ver2.lef.lvs.log
+Number of nets: 4114                       |Number of nets: 4114                       
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/Random_forest_top_ver2/runs/RUN_2025.05.08_06.07.33/logs/signoff/45-arc.log
+Pin violations: 0
+Net violations: 0
