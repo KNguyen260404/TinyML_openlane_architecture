@@ -32,7 +32,7 @@ Quy trình OpenLane giúp các nhà thiết kế nhanh chóng hiện thực hóa
 ## 3. Hình ảnh layout GDSII của chip
 
 <p align="center">
-  <img src="/chip_RF.jpg" alt="GDSII Layout" width="600"/>
+  <img src="/chip_RF.png" alt="GDSII Layout" width="600"/>
 </p>
 
 > *Hình ảnh trên là layout cuối cùng của chip sau khi hoàn thành flow OpenLane. File GDSII có thể được xem bằng KLayout hoặc Magic.*
